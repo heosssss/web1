@@ -4,6 +4,16 @@
     <title>HELLO STRANGER</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script language="javascript">
+ function  showConfirm() {
+ if (confirm("인생은 선택의 연속"))
+  {
+   alert("잘했어");
+  } else {
+   alert("메롱");
+  }
+ }
+ </script>
 </head>
 
 <body>
@@ -18,9 +28,33 @@
             <div><a href="4.html">practice</a></div>
         </div>
         <div>
-        <input type="button" value="click me" onclick="alert('아 몰랑 재밌으면 됬다!')">
-        </div>
-       
+        <input type="button" value="click me" onclick="showConfirm();" />
+        </div><br>
+        <input type="button" value="우울해" onclick="
+    document.querySelector('html').style.backgroundColor='gray';
+    document.querySelector('html').style.color='white';
+  ">
+        <input type="button" value="행복해" onclick="
+    document.querySelector('html').style.backgroundColor='pink';
+    document.querySelector('html').style.color='gray';
+  "><br>
+
+
+
+        <input type="button" value="day" onclick="
+        var target = document.querySelector('body')
+        if(this.value==='day'){
+        target.style.backgroundColor='pink';
+        target.style.color='gray';
+        this.value='night';
+        }
+        else{
+        target.style.backgroundColor='gray';
+        target.style.color='white ';
+        this.value='day';
+        }
+        ">
+    
 
     </main>
     <footer>
